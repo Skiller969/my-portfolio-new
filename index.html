@@ -9,25 +9,38 @@
   <body>
     <div id="app">
       <main class="min-h-screen  bg-[#111318] flex flex-col items-center  px-6 py-6 text-center">
-   <div class="w-full max-w-8xl flex rounded-lg text-[#F0F4F8] px-6 py-3  ">
-   <nav class="w-full max-w-6xl items-center justify-center flex ">
-   <h1 class="justify-start text-3xl ml-3 font-semibold font-serif">Sarthak</h1>
-   <ul class="w-full max-w-6xl flex items-center justify-end gap-10 text-xl ">
+   <div class="w-full max-w-8xl flex  flex-wrap rounded-lg text-[#F0F4F8] px-6 py-3  ">
+   <nav class="w-full max-w-6xl flex flex-col md:flex md:flex-row items-center">
+   <div class=" px-3 py-4 border border-[#B6E36A] border-y-0 rounded-xl"><h1 class="text-4xl font-semibold font-serif text-[#F1F0EB]">
+  Sarthak
+</h1></div>
+   <ul class="hidden md:flex w-full items-center justify-end gap-10 text-xl">
    <li><a href="/src/index.html">Home</a></li>
    <li><a href="/src/about.html" >About Me</a></li>
    <li><a href="/src/projects.html">Projects</a></li>
-   <li>Services</li>
-   <li>Contact</li>
+   <li><a href="/src/Services.html">Services</a></li>
+   <li><a href="/src/contact.html">Contact</a></li>
    </ul>
+
+<button id="menu-btn" class="block md:hidden text-[#F0F4F8] text-2xl mt-8">
+  ☰
+</button>   <div id="mobile-menu" class="hidden w-full md:hidden">
+    <ul class="flex flex-col items-center gap-4 text-sm py-4">
+      <li><a href="/src/index.html">Home</a></li>
+      <li><a href="/src/projects.html">Projects</a></li>
+      <li><a href="/src/contact.html">Contact</a></li>
+    </ul> 
+  </div>
+
    </nav>
    </div>
     <!---hero section-->
 <!-- Hero section -->
-<section class="grid grid-cols-2 min-h-screen">
+<section class="flex flex-col md:grid md:grid-cols-2 min-h-screen">
 
   <!-- Left side -->
   <div class="col-span-1 flex">
-    <div class="flex flex-col mt-20">
+    <div class="flex flex-col ">
       <div class="w-full max-w-2xl items-center justify-center ml-6">
         <h3 class="text-[#B6E36A] mt-8 text-center flex items-center gap-1">
           <span class="text-4xl">•</span> AVAILABLE FOR FREELANCE PROJECTS
@@ -40,7 +53,7 @@
         </p>
 
         <p class="text-[#8e98a8] mt-4">
-          I'm <span class="text-white">Sarthak</span>, a developer exploring web technologies and data science.
+          I'm <span class="text-white ">Sarthak</span>, a developer exploring web technologies and data science.
           <br>
           I build responsive websites that help businesses establish their presence online.
         </p>
