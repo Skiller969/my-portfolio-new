@@ -3,13 +3,14 @@ import "./style.css";
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
-
-// Close the menu when a link is clicked
-document.querySelectorAll(".mobile-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileMenu.classList.add("hidden");
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
   });
-});
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
+}
